@@ -1,0 +1,59 @@
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  padding: 10px 10px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+button{
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body{
+  background-color: #b9b0b0;
+  padding: auto;
+}
+
+.name_Header{
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1250px;
+}
+
+.main_display{
+    
+}
