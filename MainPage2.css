@@ -84,7 +84,9 @@ button{
 }
 
 body{
-  background-color: #b7ffe5;
+  margin: 0;
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  color: #333;
 }
 
 .upper-container{
