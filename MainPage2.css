@@ -1,31 +1,57 @@
-
 .topnav {
-  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #333;
-  padding: 10px 10px;
+  padding: 15px 0;
+  height: 40px;
 }
 
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  background: none; 
+  border: none;     
+  cursor: pointer;
+  padding: 5px 0;
+  padding-right: 30px;
+  color: #FFFFFF;
   text-decoration: none;
-  font-size: 17px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  transition: color 0.2s;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.topnav a:after{
+  content: "|";
+  color: #FFFFFF;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translate(-50%);
+  font-weight: 300;
+}
+
+.topnav a:last-child:after{
+  content: none;
+}
+
+.topnav a:hover,
+.topnav a:focus {
+  background-color: transparent;
+  color: #A3B1FF;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.topnav-right {
-  float: right;
+  background-color:transparent;
+  color:#A3B1FF;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 button{
@@ -57,7 +83,7 @@ button{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  scroll-margin-top: 20px;
 }
 
 
@@ -70,7 +96,9 @@ button{
 .name_Header {
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
-  letter-spacing: 1px;
+  font-size: 45px ;
+  letter-spacing: 2px;
+  color: #000000;
 }
 
 .main_display{
@@ -84,20 +112,10 @@ button{
 }
 
 body{
+  background-image:url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin: 0;
-  background: linear-gradient(120deg, #fdfbfb, #ebedee);
-  color: #333;
-}
-
-.upper-container{
-  width: 595px;
-  height: 500px;
-  margin: 0;
-}
-
-.CenImage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+  height: 200vh;
 }
